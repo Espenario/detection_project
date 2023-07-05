@@ -1,0 +1,19 @@
+100%|██████████| 4656/4656 [00:00<00:00, 89539.61it/s]
+100%|██████████| 478/478 [00:00<00:00, 477692.95it/s]
+Traceback (most recent call last):
+  File "e:\dls\detection_project\fastercnn-pytorch-training-pipeline\train.py", line 561, in <module>
+    main(args)
+  File "e:\dls\detection_project\fastercnn-pytorch-training-pipeline\train.py", line 299, in main
+    model = build_model(num_classes=NUM_CLASSES, pretrained=True)
+  File "e:\dls\detection_project\fastercnn-pytorch-training-pipeline\models\create_fasterrcnn_model.py", line 142, in return_fasterrcnn_resnet50_fpn_v2
+    model = fasterrcnn_resnet50_fpn_v2.create_model(
+  File "e:\dls\detection_project\fastercnn-pytorch-training-pipeline\models\fasterrcnn_resnet50_fpn_v2.py", line 7, in create_model
+    model = torchvision.models.detection.fasterrcnn_resnet50_fpn_v2(
+AttributeError: module 'torchvision.models.detection' has no attribute 'fasterrcnn_resnet50_fpn_v2'
+device cuda
+Checking Labels and images...
+Checking Labels and images...
+Creating data loaders
+Number of training samples: 4656
+Number of validation samples: 478
+Building model from scratch...

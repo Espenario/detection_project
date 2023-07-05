@@ -1,0 +1,60 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.9.12",
+    "heartbeatAt": "2023-07-04T15:09:41.729916",
+    "startedAt": "2023-07-04T15:09:40.742061",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model",
+        "fasterrcnn_resnet50_fpn_v2",
+        "--epochs",
+        "30",
+        "--data",
+        "../fastercnn-pytorch-training-pipeline/data_configs/plantdoc.yaml",
+        "--use-train-aug",
+        "--name",
+        "fasterrcnn_resnet50_fpn_v2_trainaug_30e"
+    ],
+    "state": "running",
+    "program": "e:\\dls\\detection_project\\fastercnn-pytorch-training-pipeline\\train.py",
+    "codePath": "fastercnn-pytorch-training-pipeline\\train.py",
+    "git": {
+        "remote": "https://github.com/Espenario/detection_project.git",
+        "commit": "4d00e8c185866838c2c101e616c174c018e362ef"
+    },
+    "email": "golovkin.dima@list.ru",
+    "root": "E:/dls/detection_project",
+    "host": "DESKTOP-3QUOLBO",
+    "username": "Pig_Astronaut",
+    "executable": "c:\\Users\\Pig_Astronaut\\anaconda3\\python.exe",
+    "cpu_count": 10,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3686.0,
+        "min": 0.0,
+        "max": 3686.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3686.0,
+            "min": 0.0,
+            "max": 3686.0
+        }
+    ],
+    "disk": {
+        "total": 709.7285118103027,
+        "used": 279.5276985168457
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Ti",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 31.747482299804688
+    }
+}

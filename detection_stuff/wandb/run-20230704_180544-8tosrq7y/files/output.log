@@ -1,0 +1,23 @@
+device cuda
+Checking Labels and images...
+Checking Labels and images...
+Creating data loaders
+Number of training samples: 4656
+Number of validation samples: 478
+Building model from scratch...
+100%|██████████| 4656/4656 [00:00<00:00, 122528.28it/s]
+100%|██████████| 478/478 [00:00<00:00, 478034.65it/s]
+Downloading: "https://download.pytorch.org/models/resnet50-0676ba61.pth" to C:\Users\Pig_Astronaut/.cache\torch\hub\checkpoints\resnet50-0676ba61.pth
+100%|██████████| 97.8M/97.8M [00:02<00:00, 42.7MB/s]
+Traceback (most recent call last):
+  File "e:\dls\detection_project\fastercnn-pytorch-training-pipeline\train.py", line 561, in <module>
+    main(args)
+  File "e:\dls\detection_project\fastercnn-pytorch-training-pipeline\train.py", line 299, in main
+    model = build_model(num_classes=NUM_CLASSES, pretrained=True)
+  File "e:\dls\detection_project\fastercnn-pytorch-training-pipeline\models\create_fasterrcnn_model.py", line 6, in return_fasterrcnn_resnet50_fpn
+    model = fasterrcnn_resnet50_fpn.create_model(
+  File "e:\dls\detection_project\fastercnn-pytorch-training-pipeline\models\fasterrcnn_resnet50_fpn.py", line 7, in create_model
+    model = torchvision.models.detection.fasterrcnn_resnet50_fpn(
+  File "C:\Users\Pig_Astronaut\AppData\Roaming\Python\Python39\site-packages\torchvision\models\detection\faster_rcnn.py", line 371, in fasterrcnn_resnet50_fpn
+    model = FasterRCNN(backbone, num_classes, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'weights'
